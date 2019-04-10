@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	min int64 = 1
+	min int64 = 1 // 最小1分钱
 )
 
 /*
