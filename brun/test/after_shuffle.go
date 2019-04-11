@@ -5,6 +5,6 @@ import (
 	"rens/infra/algo"
 )
 
-func main() {
+func Test_after_shuffle() {
 	fmt.Println(algo.AfterShuffle(int64(10), int64(100*100)))
 }
