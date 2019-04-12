@@ -5,8 +5,8 @@ import (
 	"rens/infra/algo"
 )
 
-func main() {
-	test_simple_rand()
+func main1() {
+	// test_simple_rand()
 }
 
 func test_simple_rand() {
