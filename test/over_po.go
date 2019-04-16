@@ -8,6 +8,10 @@ import (
 //红包商品表,默认有符号类型字段
 type GoodsSigned struct {
 	Goods
+
+
+
+
 }
 
 //红包商品表,无符号类型字段

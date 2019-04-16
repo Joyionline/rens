@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec7be7e-094e-4dcd-b266-089157da6b14" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/over_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/over.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/over.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/over_po.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/over_po.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +40,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="po0: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="po0@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="po0: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="goods: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -58,30 +54,24 @@
     </expanded>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/over.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="825">
+              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+              <folding>
+                <element signature="e#14#135#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../resk-pilot/test/over_po.go">
+        <entry file="file://$PROJECT_DIR$/test/over_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/over_po.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="390">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
                 <element signature="e#14#65#0" expanded="true" />
               </folding>
@@ -89,7 +79,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/infra/algo/simple_random.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -100,14 +106,13 @@
       <list>
         <option value="$PROJECT_DIR$/test/over_po.go" />
         <option value="$PROJECT_DIR$/test/over.go" />
+        <option value="$PROJECT_DIR$/test/over_test.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="784" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="966" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -135,6 +140,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -156,30 +162,98 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Go Test.BenchmarkUpdateForUnsigned in rens/test">
+    <configuration name="BenchmarkUpdateForLock in rens/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="rens" />
+      <working_directory value="$PROJECT_DIR$/test" />
+      <framework value="gobench" />
+      <kind value="PACKAGE" />
+      <package value="rens/test" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^BenchmarkUpdateForLock$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BenchmarkUpdateForUnsigned in rens/test" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="rens" />
+      <working_directory value="$PROJECT_DIR$/test" />
+      <framework value="gobench" />
+      <kind value="PACKAGE" />
+      <package value="rens/test" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^BenchmarkUpdateForUnsigned$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.BenchmarkUpdateForUnsigned in rens/test" />
+        <item itemvalue="Go Test.BenchmarkUpdateForLock in rens/test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="BenchmarkUpdateForLock_in_rens_test - 2019.04.16 at 17h 16m 55s.xml">
+      <configuration name="BenchmarkUpdateForLock in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForLock_in_rens_test - 2019.04.16 at 17h 18m 19s.xml">
+      <configuration name="BenchmarkUpdateForLock in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForLock_in_rens_test - 2019.04.16 at 17h 24m 22s.xml">
+      <configuration name="BenchmarkUpdateForLock in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForLock_in_rens_test - 2019.04.16 at 17h 26m 06s.xml">
+      <configuration name="BenchmarkUpdateForLock in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForLock_in_rens_test - 2019.04.16 at 17h 26m 37s.xml">
+      <configuration name="BenchmarkUpdateForLock in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForLock_in_rens_test - 2019.04.16 at 17h 27m 33s.xml">
+      <configuration name="BenchmarkUpdateForLock in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForLock_in_rens_test - 2019.04.16 at 17h 30m 03s.xml">
+      <configuration name="BenchmarkUpdateForLock in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForUnsigned_in_rens_test - 2019.04.16 at 17h 47m 04s.xml">
+      <configuration name="BenchmarkUpdateForUnsigned in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkUpdateForUnsigned_in_rens_test - 2019.04.16 at 17h 48m 10s.xml">
+      <configuration name="BenchmarkUpdateForUnsigned in rens/test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="784" y="23" width="1680" height="966" extended-state="1" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13308914" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13431014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32951945" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32951945" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40918368" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.327551" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.24847375" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,13 +262,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/08d4f22e-1a59-426b-8e85-9886b37c0b76/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://08d4f22e-1a59-426b-8e85-9886b37c0b76/schema/po0/table/goods">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/over_test.sql">
       <provider selected="true" editor-type-id="text-editor">
@@ -210,20 +277,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://08d4f22e-1a59-426b-8e85-9886b37c0b76/schema/po0/table/goods_unsigned">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/over_po.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="e#14#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="das://08d4f22e-1a59-426b-8e85-9886b37c0b76/schema/po0/table/goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/over.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="825">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/over_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <element signature="e#14#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infra/algo/simple_random.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
