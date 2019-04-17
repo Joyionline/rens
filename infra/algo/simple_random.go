@@ -41,3 +41,4 @@ func SimpleRand(count, amount int64) int64 {
 	}
 	return x
 }
+

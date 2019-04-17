@@ -78,3 +78,38 @@ func UpdateForUnsigned(g Goods)  {
 		fmt.Println("扣减失败")
 	}
 }
+
+
+// 乐观锁方案
+func UpdateForOptimistic(g Goods)  {
+	updatesql := "update goods " +
+				" set remain_amount=remain_amount-?, "+
+				" remain_quantity=remain_quantity-? " +
+				" where envelope_no = ? and remain_amount>=? "+
+				" and remain_quantity>= ? "
+	_,row,err:=db.Execute(updatesql,0.01,1,g.EnvelopeNo,0.01,1)
+	if err != nil {
+		fmt.Println(err)
+	}
+	if row < 1{
+		fmt.Println("扣减失败")
+	}
+
+}
+
+// 乐观锁+无符号字段方案
+func UpdateForOptimisticAndUnsigned(g Goods)  {
+	updatesql := "update goods_unsigned " +
+			"set remain_amount=remain_amount-? , " +
+			"remain_quantity=remain_quantity-? " +
+			"where envelope_no=? " +
+			"and remain_amount>=? " +
+			"and remain_quantity>=? "
+	_,row,err:=db.Execute(updatesql,0.01,1,g.EnvelopeNo,0.01,1)
+	if err != nil {
+		fmt.Println(err)
+	}
+	if row < 1 {
+		fmt.Println("扣减失败")
+	}
+}
