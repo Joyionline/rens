@@ -1,10 +1,11 @@
 package main
 
 import (
+	"rens/infra"
 	_ "rens/model"
 )
 
 func main()  {
-	// 链接数据库
+	infra.SystemRun()
 
 }

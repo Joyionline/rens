@@ -27,7 +27,7 @@ func InitUpperDatabase()  {
 		}
 	}()
 	settings:=mysql.ConnectionURL{
-		Database:"po",
+		Database:"po0",
 		Host:"localhost",
 		User:"root",
 		Password:"joyiever",
